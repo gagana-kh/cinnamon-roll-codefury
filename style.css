@@ -242,6 +242,18 @@ nav{
     justify-content: center;
     font-size: 32px;
 }
+.main-supp{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}    
+
+.sup-cont{
+    text-align: center;
+    font-size: 26px;
+}
 .abt-m{
     background-color: rgb(156, 217, 246);
 }
