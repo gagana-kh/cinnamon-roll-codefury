@@ -250,9 +250,27 @@ nav{
     flex-direction: row;
     gap: 1rem;
 }
-
-
-
+.online-h{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.heading{
+    padding-top: 110px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.online-img{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.info-h{
+    padding-left: 10px;
+    font-size: 20px;
+}
 .footer-row li {
     list-style: none;
 }
@@ -345,5 +363,6 @@ nav{
     .search-bar input {
         padding: 4px 8px;
     }
+
 
 }
