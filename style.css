@@ -21,12 +21,29 @@ body {
     background-color: #e49df5;
     box-shadow: 0 0 3rem#cf87f0;
     padding: 10px 20px;
+    
+}
+.container{
+   display: flex;
+   flex-direction: row;
 }
 
-nav {
+#navbar {
+    
+    z-index: 1;
+    position: relative;
+   
+  }
+.dropdown{
+    position: absolute;
+    
+}  
+  
+nav{
     position: fixed;
     top: 0;
     z-index: 100;
+    
     right: 0;
     left: 0;
 }
@@ -90,19 +107,91 @@ nav {
     border-radius: 5px;
     transition: 0.4s;
 }
-
-
-/* news */
-
-.row {
-    display: flex;
-    max-width: 1300px;
-    margin: auto;
-    justify-content: center;
-    align-items: baseline;
-    margin-top: 100px;
-    flex-wrap: wrap;
+.home-title{
+    margin-top:250px;
 }
+.oh{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.onlineh{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.onlineharass{
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.info-para{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.info-overload{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.socio{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.socio-para{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.social-p{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+} 
+.anger-a{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.anger-para{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.anger-p{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.anxiety-a{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.anxiety-para{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.anxiety-p{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.respdig-a{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.respdig-para{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.respdig-p{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}    
+
+.home-sub{
+    padding-top: 200px;
+    text-align: center;
+}                          
 
 
 
@@ -136,6 +225,7 @@ nav {
     margin-top: 1rem;
     padding: 1rem 12rem;
     border-radius: 4px;
+    color: black;
     border: 0.1rem solid #ea33b9;
     font-family: "Roboto", sans-serif;
 
@@ -203,7 +293,22 @@ nav {
     text-decoration: none;
     display: block;
   }
+  * Page content */
+  .content {
+    padding: 16px;
+  }
   
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd;}
   
