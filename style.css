@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Mooli&family=Poppins&display=swap');
+
 
 * {
     padding: 0;
@@ -9,7 +10,7 @@
 
 /* navbar */
 body {
-    font-family: 'Mooli', sans-serif;
+    font-family: 'Baskervville', sans-serif;
     color: #183b56;
 }
 
@@ -17,8 +18,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #aff5da;
-    box-shadow: 0 0 3rem#9febbb;
+    background-color: #e49df5;
+    box-shadow: 0 0 3rem#cf87f0;
     padding: 10px 20px;
 }
 
@@ -28,6 +29,23 @@ nav {
     z-index: 100;
     right: 0;
     left: 0;
+}
+.nav-ele{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    flex-direction: row;
+    gap:4rem;
+}
+.nav-sub{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 4rem;
+    font-style: bold;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
 }
 
 .flex {
@@ -49,12 +67,12 @@ nav {
     height: 100%;
     padding: 7px 12px;
     border-radius: 4px;
-    border: 0.1rem solid #3290ef;
+    border: 0.1rem solid #ea33b9;
     font-family: "Roboto", sans-serif;
 }
 
 .search-bar button {
-    background-color: #4a22ed;
+    background-color: #ea33b9;
     color: white;
     padding: 8px 24px;
     border:none;
@@ -63,13 +81,6 @@ nav {
     font-family: "Roboto", sans-serif;
 }
 
-/* Hamburger Menu Styles */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 5px;
-}
 
 .bar {
     width: 20px;
@@ -93,24 +104,13 @@ nav {
     flex-wrap: wrap;
 }
 
-.card {
-    width: 430px;
-}
 
-.card,
-.card-header,
-.card-content {
-    padding: 10px;
-}
-.card-header img{
-    width: 400px;
-}
 
 /*  footer */
 .footer-row {
     color: black;
-    background-color: #aff5da;
-    box-shadow: 0 0 3rem#9febbb;
+    background-color:#e49df5 ;
+    box-shadow: 0 0 3rem #cf87f0;
     display: flex;
     justify-content: center;
     gap: 15%;
@@ -122,7 +122,7 @@ nav {
     color: black;
 }
 .email-btn {
-    background-color: #4a22ed;
+    background-color: #ea33b9;
     color: white;
     padding: 8px 24px;
     border:none;
@@ -136,24 +136,79 @@ nav {
     margin-top: 1rem;
     padding: 1rem 12rem;
     border-radius: 4px;
-    border: 0.1rem solid #3290ef;
+    border: 0.1rem solid #ea33b9;
     font-family: "Roboto", sans-serif;
 
 }
-
-
+.first{
+    text-align: center;
+    width: 250px;
+}
+.email-bar{
+    text-align: center;
+}
+.third{
+    text-align: center;
+}
 
 .footer-row li {
     color: grey;
 }
-
-.first {
-    width: 250px;
+.social-logo{
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
+
+
 
 .footer-row li {
     list-style: none;
 }
+.dropbtn, .nv-sub {
+    background-color:#e49df5 ;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus{
+    background-color: #e49df5;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
 
 /* media query */
 @media screen and (max-width: 400px) {
@@ -186,7 +241,4 @@ nav {
         padding: 4px 8px;
     }
 
-}
-.invisible{
-    display: none;
 }
