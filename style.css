@@ -114,7 +114,11 @@ nav{
     margin-left: 10px;
     margin-right: 20px;
 }
-.onlineh{
+online-h2{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.online-h{
     padding-top: 10px;
     font-size: 20px;
 }
@@ -421,7 +425,9 @@ nav{
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
-
+  img {
+    object-fit: contain;
+  }
 /* media query */
 @media screen and (max-width: 400px) {
     .main-nav {
