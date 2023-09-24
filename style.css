@@ -11,6 +11,7 @@
 /* navbar */
 body {
     font-family: 'Baskervville', sans-serif;
+    font-size: 20px;
     color: #183b56;
 }
 
@@ -260,6 +261,7 @@ online-h2{
 }
 .abt-m{
     background-color: rgb(156, 217, 246);
+    padding-top: 4rem;
 }
 .an-name, .ga-name, .sa-name, .va-name{
     text-align: center;
